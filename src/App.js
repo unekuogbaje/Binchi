@@ -1,28 +1,24 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
-import { Fragment } from "react";
-import Header from "./components/header/header";
+import Home from "./routes/home/home";
 import Nav from './routes/nav/nav'
 import About from "./routes/about/about";
 import Experience from "./components/experience/experience";
 import Services from "./components/services/services";
 import Projects from "./routes/projects/projects";
-import Contact from "./routes/contact/contact";
+import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 
 const App = () => {
   return (
-    <div className=" min-h-screen border-2 border-white bg-black">
+    <div className=" min-h-screen bg-black">
       <Routes>
-        <Route path='/' element={<Header/>} />
+        <Route path='/' element={<Nav/>} />
         
-        <Route path='navlinks' element={<Nav/>}/>
-        <About/>
-        <Experience/>
-        <Services/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
+        <Route index element={<Home/>}/>
+        <Route path='about' element={<About/>} />
+        
+        
       </Routes>
     </div>
   );

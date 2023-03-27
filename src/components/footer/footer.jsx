@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section>Footer</section>
+    <div className='' >
+      <h5 > © 2023 Uneku</h5>
+    </div>
   )
 }
 

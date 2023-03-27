@@ -1,26 +1,22 @@
 import React from 'react'
 import CTA from './CTA';
-import Flo from '../../assets/Flo 3.JPG'
-import HeaderSocials from './HeaderSocials';
+import Projects from '../../routes/projects/projects';
+
 const Header = () => {
   return (
-    <header className='h-screen p-28 overflow-hidden md:h-[68vh] sm:[100vh'>
-      <div className="container header__container h-full relative text-center">
-        <h5>Hi there! I'm</h5>
+    <div className='h-screen p-8 overflow-scroll md:h-[68vh] sm:[100vh] '>
+      <div className="container header__container relative text-left">
+        <h5 className='pt-[30px] '>Hi there! I'm</h5>
         <h1>Uneku Ogbaje</h1>
-        <h5 className='text-light'>
-          Frontend Developer
+        <h5 className='text-light w-[50%] '>
+        I'm a front-end developer who likes to travel. I have designed and developed multiple frontedn applications for many organizations all over the world. Lorem ipsum dolor sit amet and all the wonderful, marvellous, fantastic, durable, enduring things of this world .
         </h5>
-        <CTA/>
-        <HeaderSocials/>
-
-        <a href='#contact' className='scroll__down font-light text-sm absolute right-[-2.3rem] bottom-[5rem] rotate-90 ' >
-          Scroll Down
-        </a>
-
         
       </div>
-    </header>
+      <Projects/>
+
+      
+    </div>
   )
 }
 
