@@ -2,12 +2,7 @@ import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import Home from "./routes/home/home";
 import Nav from './routes/nav/nav'
-import About from "./routes/about/about";
-import Experience from "./components/experience/experience";
-import Services from "./components/services/services";
-import Projects from "./routes/projects/projects";
 import Contact from "./components/contact/contact";
-import Footer from "./components/footer/footer";
 
 const App = () => {
   return (
@@ -15,10 +10,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Nav/>} />
         
-        <Route index element={<Home/>}/>
-        <Route path='about' element={<About/>} />
-        
-        
+        <Route index element={<Home/>}/>    
       </Routes>
     </div>
   );

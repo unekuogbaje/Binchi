@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='' >
-      <h5 > © 2023 Uneku</h5>
+    <div className='site-footer h-fit ' >
+      <h2 className='h-fit'> © 2023 Uneku</h2>
     </div>
   )
 }

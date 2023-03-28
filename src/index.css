@@ -65,6 +65,13 @@ a {
   margin: 0 auto;
 }
 
+.site-footer {
+  position: fixed;
+  padding-top: 20px;
+  padding-top: 20px;
+  bottom: 0;
+}
+
 h1,
 h2,
 h3,
@@ -109,6 +116,7 @@ nav a.active {
   background: var(--color-bg);
   color: var(--color-white);
 }
+
 
 .btn {
   width: max-content;
