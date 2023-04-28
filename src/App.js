@@ -1,12 +1,11 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import Home from "./routes/home/home";
-import Nav from './routes/nav/nav'
-import Contact from "./components/contact/contact";
+import Nav from './components/nav/nav'
 
 const App = () => {
   return (
-    <div className=" min-h-screen bg-black">
+    <div className=" min-h-screen ">
       <Routes>
         <Route path='/' element={<Nav/>} />
         
